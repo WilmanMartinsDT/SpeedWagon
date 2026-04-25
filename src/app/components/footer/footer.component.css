@@ -1,0 +1,10 @@
+.social-btn {
+  width: 36px;
+  height: 36px;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: white;
+  color: black !important;
+}
