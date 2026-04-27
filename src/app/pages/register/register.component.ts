@@ -26,6 +26,12 @@ export class RegisterComponent {
       this.errorMessage = 'Please fill in all fields.';
       return;
     }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(this.email)) {
+      this.errorMessage = 'Please enter a valid email address.';
+      return;
+    }
+
     if (this.password !== this.confirmPassword) {
       this.errorMessage = 'Passwords do not match.';
       return;

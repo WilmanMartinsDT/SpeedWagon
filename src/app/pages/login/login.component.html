@@ -1,1 +1,47 @@
-<p>login works!</p>
+<div class="login-wrapper d-flex align-items-center justify-content-center">
+  <img src="assets/images/ocean-bg.jpg" class="login-bg" alt="">
+  <div class="login-card p-4 p-md-5">
+
+    <div class="text-center mb-4">
+      <h2 class="login-title">Welcome Back</h2>
+      <p class="login-subtitle">Dive back into the abyss</p>
+    </div>
+
+    @if (errorMessage) {
+      <div class="alert alert-danger">{{ errorMessage }}</div>
+    }
+    @if (successMessage) {
+      <div class="alert alert-success">{{ successMessage }}</div>
+    }
+
+    <form (ngSubmit)="onSubmit()">
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" id="email" class="form-control custom-input"
+               placeholder="name@example.com" [(ngModel)]="email" name="email">
+      </div>
+
+      <div class="mb-4">
+        <label for="password" class="form-label">Password</label>
+        <div class="input-group">
+          <input [type]="showPassword ? 'text' : 'password'"
+                 id="password" class="form-control custom-input"
+                 placeholder="Your password" [(ngModel)]="password" name="password">
+          <button type="button" class="btn btn-eye" (click)="showPassword = !showPassword">
+            <i [class]="showPassword ? 'bi bi-eye-slash' : 'bi bi-eye'"></i>
+          </button>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-login w-100 mb-3">
+        Log in
+      </button>
+
+      <p class="text-center login-register-link">
+        Don't have an account? <a routerLink="/register">Sign up</a>
+      </p>
+
+    </form>
+  </div>
+</div>
