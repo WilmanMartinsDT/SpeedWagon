@@ -1,0 +1,6 @@
+.hero {
+  min-height: 90vh;
+  background-color: #0a0a1a;
+}
+.card { transition: transform 0.3s; }
+.card:hover { transform: translateY(-5px); }

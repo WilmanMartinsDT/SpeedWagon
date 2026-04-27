@@ -1,1 +1,22 @@
-<p>home works!</p>
+<section class="hero text-center text-white d-flex align-items-center justify-content-center">
+  <div>
+    <h1 class="display-3 fw-bold">Journey Beyond Darkness</h1>
+    <p class="lead">Explora las profundidades del océano con Speed Wagon</p>
+    <a routerLink="/layers" class="btn btn-outline-info btn-lg mt-3">Explorar ahora</a>
+  </div>
+</section>
+
+<section class="container my-5">
+  <h2 class="text-center text-info mb-4">Zonas del Océano</h2>
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let zone of zones">
+      <div class="card bg-dark text-white h-100 border-secondary">
+        <div class="card-body">
+          <h5 class="card-title text-info">{{ zone.name }}</h5>
+          <p class="card-text text-secondary">{{ zone.desc }}</p>
+          <a routerLink="/layers" class="btn btn-sm btn-outline-info">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
