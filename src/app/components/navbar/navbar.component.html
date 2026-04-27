@@ -1,21 +1,24 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid px-4">
 
-    <a class="navbar-brand fw-bold" routerLink="/">
-      <i class="bi bi-water me-2"></i>SPEED WAGON
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center gap-2" routerLink="/">
+      <i class="bi bi-water brand-icon"></i>
+      <span class="brand-text">SPEED WAGON</span>
     </a>
 
+    <!-- MOBILE TOGGLE -->
     <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav">
+            data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- LINKS -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto align-items-center gap-2">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active"
-             [routerLinkActiveOptions]="{exact: true}">Home</a>
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/layers" routerLinkActive="active">Layers</a>
@@ -26,24 +29,20 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
         </li>
-        <li class="nav-item dropdown ms-2">
-          <a class="nav-link dropdown-toggle d-flex align-items-center gap-1"
-             href="#" role="button"
-             data-bs-toggle="dropdown"
-             aria-expanded="false">
-            <i class="bi bi-person-circle fs-5"></i>
+
+        <!-- USER ICON -->
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-user-icon dropdown-toggle" href="#"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
           </a>
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-            <li>
-              <a class="dropdown-item" routerLink="/login">
-                <i class="bi bi-box-arrow-in-right me-2"></i>Iniciar Sesión
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="/register">
-                <i class="bi bi-person-plus me-2"></i>Registrarse
-              </a>
-            </li>
+          <ul class="dropdown-menu dropdown-menu-end ocean-dropdown">
+            <li><a class="dropdown-item" routerLink="/login">Log in</a></li>
+            <li><a class="dropdown-item" routerLink="/register">Sign up</a></li>
           </ul>
         </li>
       </ul>

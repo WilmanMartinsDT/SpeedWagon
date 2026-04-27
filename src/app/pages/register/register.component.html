@@ -1,1 +1,53 @@
-<p>register works!</p>
+<div class="register-wrapper d-flex align-items-center justify-content-center">
+  <img src="assets/images/ocean-bg.jpg" class="register-bg" alt="">
+  <div class="register-card p-4 p-md-5">
+
+    <div class="text-center mb-4">
+      <h2 class="register-title">Create Account</h2>
+      <p class="register-subtitle">Join the exploration of the abyss</p>
+    </div>
+
+    @if (errorMessage) {
+      <div class="alert alert-danger">{{ errorMessage }}</div>
+    }
+    @if (successMessage) {
+      <div class="alert alert-success">{{ successMessage }}</div>
+    }
+
+    <form (ngSubmit)="onSubmit()">
+
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Full name</label>
+        <input type="text" id="nombre" class="form-control custom-input"
+               placeholder="Your name" [(ngModel)]="nombre" name="nombre">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" id="email" class="form-control custom-input"
+               placeholder="name@example.com" [(ngModel)]="email" name="email">
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" class="form-control custom-input"
+               placeholder="At least 6 characters" [(ngModel)]="password" name="password">
+      </div>
+
+      <div class="mb-4">
+        <label for="confirmPassword" class="form-label">Confirm password</label>
+        <input type="password" id="confirmPassword" class="form-control custom-input"
+               placeholder="Repeat your password" [(ngModel)]="confirmPassword" name="confirmPassword">
+      </div>
+
+      <button type="submit" class="btn btn-register w-100 mb-3">
+        Sign up
+      </button>
+
+      <p class="text-center register-login-link">
+        Already have an account? <a routerLink="/login">Log in</a>
+      </p>
+
+    </form>
+  </div>
+</div>
