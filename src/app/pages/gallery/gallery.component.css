@@ -1,0 +1,30 @@
+.gallery-page {
+  background: radial-gradient(circle at top, #0a192f, #02060d);
+  min-height: 100vh;
+}
+
+.text-cyan {
+  color: #00e5ff;
+}
+
+/* Placeholder en vez de imagen */
+.carousel-placeholder {
+  height: 400px;
+  background: linear-gradient(145deg, #02121f, #041c2c);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  color: #00e5ff;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+/* Caption estilo sci-fi */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Sombras tipo glow */
+.shadow-lg {
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.2);
+}

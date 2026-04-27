@@ -1,1 +1,66 @@
-<p>gallery works!</p>
+<section class="gallery-page py-5">
+  <div class="container text-center">
+
+    <!-- Título -->
+    <h1 class="mb-4 text-cyan">Marine Creatures Gallery</h1>
+    <p class="mb-5 text-light opacity-75">
+      Explore the unknown beings that inhabit the depths of the ocean.
+    </p>
+
+    <!-- Carousel -->
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner rounded shadow-lg">
+
+        <div class="carousel-item active">
+          <div class="carousel-placeholder d-flex align-items-center justify-content-center">
+            <span>Creature 1</span>
+          </div>
+          <div class="carousel-caption">
+            <h5>Unknown Species</h5>
+            <p>Detected in the Twilight Zone</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-placeholder d-flex align-items-center justify-content-center">
+            <span>Creature 2</span>
+          </div>
+          <div class="carousel-caption">
+            <h5>Bioluminescent Entity</h5>
+            <p>Midnight Zone lifeform</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-placeholder d-flex align-items-center justify-content-center">
+            <span>Creature 3</span>
+          </div>
+          <div class="carousel-caption">
+            <h5>Abyssal Predator</h5>
+            <p>Hadal Zone organism</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
