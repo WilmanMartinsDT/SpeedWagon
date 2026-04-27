@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Architeuthis dux",
+    "common": "Giant Squid",
+    "depth": "600 - 1000m",
+    "status": "Least Concern",
+    "description": "One of the largest invertebrates on Earth. Rarely seen alive, it inhabits the twilight zone of the ocean.",
+    "image": "assets/images/giant-squid.png"
+  },
+  {
+    "id": 2,
+    "name": "Vampyroteuthis infernalis",
+    "common": "Vampire Squid",
+    "depth": "600 - 900m",
+    "status": "Least Concern",
+    "description": "Despite its name, it is neither squid nor octopus. Survives in oxygen-minimum zones where few creatures can.",
+    "image": "assets/images/vampire-squid.png"
+  },
+  {
+    "id": 3,
+    "name": "Melanocetus johnsonii",
+    "common": "Black Sea Devil",
+    "depth": "200 - 2000m",
+    "status": "Least Concern",
+    "description": "A deep-sea anglerfish that uses a bioluminescent lure to attract prey in total darkness.",
+    "image": "assets/images/anglerfish.png"
+  },
+  {
+    "id": 4,
+    "name": "Physeter macrocephalus",
+    "common": "Sperm Whale",
+    "depth": "300 - 3000m",
+    "status": "Vulnerable",
+    "description": "The deepest-diving mammal on Earth. Known to battle giant squids in the crushing darkness of the deep.",
+    "image": "assets/images/sperm-whale.png"
+  }
+]
