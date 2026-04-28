@@ -1,1 +1,41 @@
-<p>layers works!</p>
+<section class="layers-page py-5">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="text-center mb-5">
+      <h1 class="text-cyan">Ocean Layers</h1>
+      <p class="text-light opacity-75">
+        Descend through the different depths of the ocean and discover its secrets.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <section class="layers-page">
+
+      <!-- Título (lo conservas) -->
+      <div class="container text-center py-5">
+        <h1 class="text-cyan">Ocean Layers</h1>
+        <p class="text-light opacity-75">
+          Descend through the different depths of the ocean and discover its secrets.
+        </p>
+      </div>
+
+      <!-- BLOQUES (sustituye el row de cards por esto) -->
+      <div *ngFor="let layer of layers" class="layer-section" [ngClass]="layer.class">
+
+        <div class="overlay"></div>
+
+        <div class="content text-center">
+          <h2 class="text-cyan">{{ layer.name }}</h2>
+          <p class="depth">{{ layer.depth }}</p>
+          <p class="description">
+            {{ layer.description }}
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+    </div>
+  </div>
+</section>
