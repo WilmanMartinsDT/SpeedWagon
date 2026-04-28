@@ -1,0 +1,39 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 1;
+}
+
+.content {
+  z-index: 2;
+}
+
+/* reutilizado de tu style.css */
+.typing-effect {
+  display: block;
+  font-family: monospace;
+  border-right: 3px solid currentColor;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30) forwards, blink 0.7s step-end infinite;
+  width: fit-content;
+}
+
+@keyframes typing {
+  from { max-width: 0; }
+  to { max-width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* cards hover (opcional si lo usas en más sitios) */
+.card {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
