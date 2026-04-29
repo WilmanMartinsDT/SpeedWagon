@@ -1,0 +1,121 @@
+.navbar {
+  background: rgba(0, 12, 35, 0.88) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  box-shadow: 0 2px 30px rgba(0, 80, 160, 0.25);
+  padding: 0.6rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo texto */
+.brand-text {
+  color: #00d4ff;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Logo SVG */
+.navbar-brand svg {
+  filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.5));
+  transition: filter 0.3s ease;
+}
+
+.navbar-brand:hover svg {
+  filter: drop-shadow(0 0 14px rgba(0, 212, 255, 0.9));
+}
+
+/* Links */
+.nav-link {
+  color: #8ecfdf !important;
+  font-weight: 500;
+  font-size: 0.92rem;
+  letter-spacing: 0.5px;
+  padding: 0.4rem 0.75rem !important;
+  border-radius: 6px;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00d4ff !important;
+  background: rgba(0, 212, 255, 0.08);
+}
+
+/* Link activo */
+.nav-link.active {
+  color: #00d4ff !important;
+  background: rgba(0, 212, 255, 0.1);
+}
+
+/* Icono usuario */
+.nav-user-icon {
+  color: #8ecfdf !important;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.5rem !important;
+}
+
+.nav-user-icon:hover {
+  color: #00d4ff !important;
+}
+
+/* Dropdown oceánico */
+.ocean-dropdown {
+  background: rgba(4, 14, 38, 0.97);
+  border: 1px solid rgba(0, 180, 220, 0.25);
+  border-radius: 10px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  min-width: 160px;
+}
+
+.ocean-dropdown .dropdown-item {
+  color: #8ecfdf;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.2rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ocean-dropdown .dropdown-item:hover {
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+}
+
+.ocean-dropdown .dropdown-divider {
+  border-color: rgba(0, 180, 220, 0.15);
+}
+
+/* Hamburguesa móvil */
+.navbar-toggler {
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+  filter: invert(70%) sepia(80%) saturate(400%) hue-rotate(170deg);
+}
+
+.brand-icon {
+  font-size: 1.6rem;
+  color: #00d4ff;
+  filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.5));
+  transition: filter 0.3s ease;
+}
+
+.navbar-brand:hover .brand-icon {
+  filter: drop-shadow(0 0 14px rgba(0, 212, 255, 0.9));
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(2, 10, 28, 0.97);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(0, 180, 220, 0.15);
+  }
+}
