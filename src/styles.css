@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 0;
   background-color: #212529;
   color: #e0f4ff;
   font-family: 'Segoe UI', sans-serif;

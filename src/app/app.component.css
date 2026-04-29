@@ -1,0 +1,18 @@
+:host ::ng-deep router-outlet ~ * {
+  margin-top: 0;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:host ::ng-deep app-navbar {
+  flex-shrink: 0;
+}
+
+:host ::ng-deep app-footer {
+  margin-top: auto;
+}
+
