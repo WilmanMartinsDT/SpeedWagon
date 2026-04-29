@@ -11,11 +11,11 @@ import { NgFor } from '@angular/common';
 })
 export class HomeComponent {
   zones = [
-    { name: 'Sunlight Zone', desc: 'Hasta 200m. Aquí llega la luz solar y abunda la vida marina.' },
-    { name: 'Twilight Zone', desc: '200-1000m. Poca luz, criaturas bioluminiscentes.'},
-    { name: 'Midnight Zone', desc: '1000-4000m. Oscuridad total, presión extrema.'},
-    { name: 'Abyssal Zone', desc: '4000-6000m. Frío absoluto y criaturas desconocidas.' },
-    { name: 'Hadal Zone', desc: 'Más de 6000m. Las fosas más profundas del planeta.'},
-    { name: 'Galería', desc: 'Descubre las criaturas más sorprendentes del océano profundo.'},
+    { name: 'Sunlight Zone', desc: 'Up to 200m. Sunlight reaches here and marine life is abundant.' },
+    { name: 'Twilight Zone', desc: '200-1000m. Low light, bioluminescent creatures.'},
+    { name: 'Midnight Zone', desc: '1000-4000m. Complete darkness, extreme pressure.'},
+    { name: 'Abyssal Zone', desc: '4000-6000m. Absolute cold and unknown creatures.' },
+    { name: 'Hadal Zone', desc: 'Over 6000m. The deepest trenches on the planet.'},
+    { name: 'Gallery', desc: 'Discover the most amazing creatures of the deep ocean.'},
   ];
 }
