@@ -66,3 +66,17 @@
 .hadal {
   background: linear-gradient(#000000, #000814);
 }
+
+.layers-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.layer-block {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
