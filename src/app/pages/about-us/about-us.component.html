@@ -1,0 +1,104 @@
+<!-- HERO -->
+<section class="about-hero text-center text-white d-flex align-items-center justify-content-center">
+  <div>
+    <h1 class="display-4 fw-bold text-info">About Us</h1>
+    <p class="lead text-secondary">Meet the team behind Speed Wagon</p>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="container my-5">
+  <div class="row align-items-center g-5">
+    <div class="col-md-6">
+      <h2 class="text-info mb-3">Our Mission</h2>
+      <p class="text-secondary">
+        Speed Wagon was born from a passion for exploring the unknown. Our goal is to bring
+        the wonders of the deep ocean to everyone, combining science, technology and design.
+      </p>
+      <p class="text-secondary">
+        We believe that knowledge of the sea is essential to understanding our planet.
+        Every layer of the ocean hides secrets that deserve to be discovered and shared.
+      </p>
+    </div>
+    <div class="col-md-6 text-center">
+      <img
+        src="assets/images/about-ocean.png"
+        alt="Deep ocean"
+        class="img-fluid rounded about-img"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="bg-dark py-5">
+  <div class="container">
+    <h2 class="text-center text-info mb-5">Our Values</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="value-card text-center p-4 rounded border border-secondary h-100">
+          <i class="bi bi-eye value-icon text-info"></i>
+          <h5 class="text-white mt-3">Exploration</h5>
+          <p class="text-secondary">Limitless curiosity towards the depths of the ocean and knowledge.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card text-center p-4 rounded border border-secondary h-100">
+          <i class="bi bi-shield-check value-icon text-info"></i>
+          <h5 class="text-white mt-3">Commitment</h5>
+          <p class="text-secondary">Full dedication to quality and precision in every project we undertake.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card text-center p-4 rounded border border-secondary h-100">
+          <i class="bi bi-globe2 value-icon text-info"></i>
+          <h5 class="text-white mt-3">Community</h5>
+          <p class="text-secondary">Sharing ocean knowledge with the world to inspire the next generation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="container my-5">
+  <h2 class="text-center text-info mb-5">The Team</h2>
+  <div class="row justify-content-center g-4">
+    <div class="col-md-5" *ngFor="let member of teamMembers">
+      <div class="card bg-dark text-white border-secondary h-100">
+        <div class="card-body text-center p-4">
+          <i class="bi {{ member.icon }} team-icon text-info"></i>
+          <h5 class="card-title mt-3">{{ member.name }}</h5>
+          <p class="text-info small">{{ member.role }}</p>
+          <p class="text-secondary">{{ member.bio }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section class="bg-dark py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-6 text-center">
+        <img
+          src="assets/images/about-team.png"
+          alt="Our origins"
+          class="img-fluid rounded about-img"
+        />
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-info mb-3">Our Story</h2>
+        <p class="text-secondary">
+          Speed Wagon started as a student project with a clear vision: to create a digital
+          platform that connected people with the fascinating world of marine creatures.
+        </p>
+        <p class="text-secondary">
+          Since its beginnings, the team has worked with passion to build a unique experience
+          that blends education, design and modern technology with Angular and Bootstrap.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

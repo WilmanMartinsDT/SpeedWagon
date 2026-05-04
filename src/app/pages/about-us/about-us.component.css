@@ -1,0 +1,63 @@
+:host {
+  display: block;
+  background-color: #020c1b;
+}
+
+/* HERO */
+.about-hero {
+  min-height: 40vh;
+  background: linear-gradient(180deg, #020c1b 0%, #0a1628 100%);
+}
+
+/* MISSION SECTION */
+.mission-section {
+  background: linear-gradient(180deg, #0a1628 0%, #0d1f3c 100%);
+  padding: 4rem 0;
+}
+
+/* VALUES SECTION */
+.values-section {
+  background: linear-gradient(180deg, #0d1f3c 0%, #102447 100%);
+  padding: 4rem 0;
+}
+
+/* TEAM SECTION */
+.team-section {
+  background: linear-gradient(180deg, #102447 0%, #0e2a52 100%);
+  padding: 4rem 0;
+}
+
+/* HISTORY SECTION */
+.history-section {
+  background: linear-gradient(180deg, #0e2a52 0%, #0c2d5e 100%);
+  padding: 4rem 0;
+}
+
+/* CARDS */
+.value-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(13, 202, 240, 0.15) !important;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.value-card:hover {
+  border-color: rgba(13, 202, 240, 0.5) !important;
+  transform: translateY(-4px);
+}
+
+.value-icon { font-size: 2.5rem; }
+.team-icon  { font-size: 3rem; }
+
+/* IMAGES */
+.about-img {
+  max-height: 350px;
+  object-fit: cover;
+  width: 100%;
+  border: 1px solid rgba(13, 202, 240, 0.2);
+}
+
+/* TEAM CARDS */
+.card {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(13, 202, 240, 0.15) !important;
+}

@@ -32,20 +32,22 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About Us</a>
+        </li>
 
         <!-- USER ICON -->
-        <li class="nav-item dropdown">
-          <a class="nav-link nav-user-icon dropdown-toggle" href="#"
-             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item" style="position: relative;">
+          <a class="nav-link nav-user-icon" href="javascript:void(0)" (click)="toggleDropdown()">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="8" r="4"/>
               <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
             </svg>
           </a>
-          <ul class="dropdown-menu dropdown-menu-end ocean-dropdown">
-            <li><a class="dropdown-item" routerLink="/login">Log in</a></li>
-            <li><a class="dropdown-item" routerLink="/register">Sign up</a></li>
+          <ul class="ocean-dropdown" [class.show]="dropdownOpen">
+            <li><a class="dropdown-item" routerLink="/login" (click)="closeDropdown()">Log in</a></li>
+            <li><a class="dropdown-item" routerLink="/register" (click)="closeDropdown()">Sign up</a></li>
           </ul>
         </li>
       </ul>
