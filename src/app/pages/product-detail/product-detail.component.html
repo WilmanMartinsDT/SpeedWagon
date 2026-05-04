@@ -1,0 +1,53 @@
+<section class="detail-section" *ngIf="product">
+  <div class="container py-5">
+
+    <!-- BACK BUTTON -->
+    <a routerLink="/shop" class="btn-back mb-4 d-inline-flex align-items-center gap-2">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+      Back to Shop
+    </a>
+
+    <div class="row g-5 align-items-center">
+
+      <!-- IMAGEN -->
+      <div class="col-md-6">
+        <img [src]="product.img" [alt]="product.name" class="detail-img rounded" />
+      </div>
+
+      <!-- INFO -->
+      <div class="col-md-6">
+        <span class="product-category">{{ product.category }}</span>
+        <h1 class="detail-name mt-2">{{ product.name }}</h1>
+        <p class="detail-desc mt-3">{{ product.description }}</p>
+
+        <div class="detail-meta mt-4">
+          <span class="detail-price">{{ product.price | currency:'EUR' }}</span>
+          <span class="detail-stock ms-3">
+            <i class="bi bi-box-seam me-1"></i>{{ product.stock }} in stock
+          </span>
+        </div>
+
+        <!-- CANTIDAD -->
+        <div class="d-flex align-items-center gap-3 mt-4">
+          <div class="qty-control d-flex align-items-center gap-2">
+            <button class="btn-qty">−</button>
+            <span class="qty-value">1</span>
+            <button class="btn-qty">+</button>
+          </div>
+          <button class="btn-add">
+            <i class="bi bi-cart-plus me-2"></i>Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOADING -->
+<section class="detail-section d-flex align-items-center justify-content-center" *ngIf="!product">
+  <p class="text-info">Loading product...</p>
+</section>

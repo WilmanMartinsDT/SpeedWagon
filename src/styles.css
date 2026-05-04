@@ -7,3 +7,29 @@ html, body {
   color: #e0f4ff;
   font-family: 'Segoe UI', sans-serif;
 }
+
+/* HERO REUTILIZABLE — igual en todas las páginas */
+.page-hero {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 1rem 3rem;
+  background: linear-gradient(180deg, #020c1b 0%, #0a1628 100%);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.page-hero-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: #00d4ff;
+  text-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.page-hero-subtitle {
+  color: #8ecfdf;
+  font-size: 1.1rem;
+}

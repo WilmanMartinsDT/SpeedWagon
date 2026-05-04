@@ -7,6 +7,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import {NotFoundComponent} from './pages/not-found/not-found.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import {ShopComponent} from './pages/shop/shop.component';
+import {ProductDetailComponent} from './pages/product-detail/product-detail.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +18,8 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'about', component: AboutUsComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'product/:id', component: ProductDetailComponent },
   { path: '**', component: NotFoundComponent },
 
 ];

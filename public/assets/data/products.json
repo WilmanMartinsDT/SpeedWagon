@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Deep Ocean T-Shirt",
+    "category": "Clothing",
+    "price": 24.99,
+    "description": "Premium cotton t-shirt with a deep ocean bioluminescent print. Inspired by the midnight zone creatures.",
+    "img": "assets/images/product-tshirt.png",
+    "stock": 15
+  },
+  {
+    "id": 2,
+    "name": "Ocean Zones Poster",
+    "category": "Decoration",
+    "price": 14.99,
+    "description": "High quality A2 poster showing all ocean zones from sunlight to hadal. Perfect for any room.",
+    "img": "assets/images/product-poster.png",
+    "stock": 30
+  },
+  {
+    "id": 3,
+    "name": "SpeedWagon Hoodie",
+    "category": "Clothing",
+    "price": 49.99,
+    "description": "Warm hoodie with the SpeedWagon logo and deep sea artwork on the back.",
+    "img": "assets/images/product-hoodie.png",
+    "stock": 10
+  },
+  {
+    "id": 4,
+    "name": "Ocean Explorer Mug",
+    "category": "Accessories",
+    "price": 12.99,
+    "description": "Ceramic mug with bioluminescent jellyfish design. Changes color when filled with hot liquid.",
+    "img": "assets/images/product-mug.png",
+    "stock": 25
+  },
+  {
+    "id": 5,
+    "name": "Deep Sea Notebook",
+    "category": "Stationery",
+    "price": 9.99,
+    "description": "A5 hardcover notebook with ocean depth illustrations on each chapter page.",
+    "img": "assets/images/product-notebook.png",
+    "stock": 40
+  },
+  {
+    "id": 6,
+    "name": "Bioluminescence Cap",
+    "category": "Clothing",
+    "price": 19.99,
+    "description": "Embroidered cap with a glowing anglerfish design. One size fits all.",
+    "img": "assets/images/product-cap.png",
+    "stock": 20
+  }
+]
