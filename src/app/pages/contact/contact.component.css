@@ -53,3 +53,9 @@
 .fade.show {
   opacity: 1;
 }
+
+.form-control:focus, .form-select:focus {
+  border-color: #0dcaf0;
+  box-shadow: 0 0 10px rgba(13, 202, 240, 0.5);
+  transition: 0.3s;
+}

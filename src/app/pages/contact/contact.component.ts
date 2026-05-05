@@ -9,6 +9,10 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   lastScrollTop = 0;
 
+  // 🔥 NUEVO: estado del formulario
+  loading: boolean = false;
+  success: boolean = false;
+
   testimonials = [
     {
       message: "The journey felt unreal. Seeing Earth from above changes you.",
@@ -56,8 +60,13 @@ export class ContactComponent implements OnInit, OnDestroy {
     }, 4000);
   }
 
+  // 🔥 MEJORADO
   onSubmit(event: Event) {
     event.preventDefault();
+
+    this.loading = true;
+    this.success = false;
+
     const form = event.target as HTMLFormElement;
     const data = new FormData(form);
 
@@ -69,6 +78,13 @@ export class ContactComponent implements OnInit, OnDestroy {
       message: data.get('message'),
       newsletter: data.get('newsletter') !== null
     });
+
+    // Simulación de envío
+    setTimeout(() => {
+      this.loading = false;
+      this.success = true;
+      form.reset(); // limpia el formulario
+    }, 1500);
   }
 
   @HostListener('window:scroll', [])

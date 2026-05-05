@@ -71,10 +71,19 @@
                     </div>
                   </div>
 
-                  <div class="col-12 d-grid d-sm-flex justify-content-sm-end">
-                    <button type="submit" class="btn btn-primary btn-lg">
-                      Send message
-                    </button>
+                  <button type="submit" class="btn btn-primary btn-lg w-100" [disabled]="loading">
+                    <ng-container *ngIf="!loading">Send message</ng-container>
+                    <ng-container *ngIf="loading">
+                      <span class="spinner-border spinner-border-sm me-2"></span>
+                      Sending...
+                    </ng-container>
+                  </button>
+
+
+                  <div class="col-12">
+                    <div *ngIf="success" class="alert alert-success mt-3">
+                      Message sent successfully 🚀
+                    </div>
                   </div>
 
                 </div>

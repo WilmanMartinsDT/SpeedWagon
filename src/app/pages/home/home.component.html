@@ -1,11 +1,16 @@
-<section class="hero text-center text-white d-flex align-items-center justify-content-center">
+<section class="hero text-center text-white d-flex align-items-center justify-content-center position-relative">
   <video class="bg-video" autoplay muted loop playsinline>
     <source src="assets/images/ocean_loop.mp4" type="video/mp4">
   </video>
-  <div>
-    <h1 class="display-3 fw-bold">Journey Beyond Darkness</h1>
-    <p class="lead">Explore the depths with Speed Wagon</p>
-    <a routerLink="/layers" class="btn btn-outline-info btn-lg mt-3">Explore now</a>
+  
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1 class="display-3 fw-bold fade-in">Journey Beyond Darkness</h1>
+    <p class="lead fade-in delay-1">Explore the depths with Speed Wagon</p>
+    <a routerLink="/layers" class="btn btn-outline-info btn-lg mt-3 fade-in delay-2">
+      Explore now
+    </a>
   </div>
 </section>
 
