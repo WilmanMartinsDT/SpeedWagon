@@ -7,6 +7,20 @@
 .about-hero {
   min-height: 40vh;
   background: linear-gradient(180deg, #020c1b 0%, #0a1628 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✨ entrada suave del hero */
+.about-hero h1,
+.about-hero p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.about-hero p {
+  animation-delay: 0.3s;
 }
 
 /* MISSION SECTION */
@@ -33,20 +47,84 @@
   padding: 4rem 0;
 }
 
+/* 🔥 SCROLL REVEAL (usa tu TS) */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px) scale(0.98);
+  transition: all 0.8s ease;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* variantes */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.8s ease;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.8s ease;
+}
+
+.reveal-left.revealed,
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* CARDS */
 .value-card {
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(13, 202, 240, 0.15) !important;
-  transition: border-color 0.3s ease, transform 0.3s ease;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
 }
 
+/* ✨ hover pro */
 .value-card:hover {
-  border-color: rgba(13, 202, 240, 0.5) !important;
-  transform: translateY(-4px);
+  border-color: rgba(13, 202, 240, 0.6) !important;
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 200, 255, 0.15);
 }
 
-.value-icon { font-size: 2.5rem; }
-.team-icon  { font-size: 3rem; }
+/* ✨ glow */
+.value-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(13,202,240,0.2), transparent 70%);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.value-card:hover::before {
+  opacity: 1;
+}
+
+/* ICONOS */
+.value-icon {
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.team-icon  {
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+
+/* ✨ animación iconos */
+.value-card:hover .value-icon,
+.card:hover .team-icon {
+  transform: scale(1.25) rotate(5deg);
+  color: #66e0ff;
+}
 
 /* IMAGES */
 .about-img {
@@ -54,10 +132,38 @@
   object-fit: cover;
   width: 100%;
   border: 1px solid rgba(13, 202, 240, 0.2);
+  transition: all 0.5s ease;
+}
+
+/* ✨ hover imagen */
+.about-img:hover {
+  transform: scale(1.05) rotate(1deg);
+  filter: brightness(1.1);
 }
 
 /* TEAM CARDS */
 .card {
   background-color: rgba(255, 255, 255, 0.04) !important;
   border: 1px solid rgba(13, 202, 240, 0.15) !important;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #0dcaf0 !important;
+  box-shadow: 0 15px 40px rgba(0, 200, 255, 0.15);
+}
+
+/* ✨ animación base */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
