@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Sunlight Zone",
+    "depth": "0 - 200m",
+    "desc": "The uppermost layer where sunlight penetrates, full of life and color.",
+    "img": "assets/images/zone-sunlight.png"
+  },
+  {
+    "id": 2,
+    "name": "Twilight Zone",
+    "depth": "200 - 1000m",
+    "desc": "A mysterious middle layer where light barely reaches.",
+    "img": "assets/images/zone-twilight.png"
+  },
+  {
+    "id": 3,
+    "name": "Midnight Zone",
+    "depth": "1000 - 4000m",
+    "desc": "Complete darkness, extreme pressure and unique creatures.",
+    "img": "assets/images/zone-midnight.png"
+  },
+  {
+    "id": 4,
+    "name": "Abyssal Zone",
+    "depth": "4000 - 6000m",
+    "desc": "One of the least explored regions on Earth, pitch black and freezing cold.",
+    "img": "assets/images/zone-abyssal.png"
+  },
+  {
+    "id": 5,
+    "name": "Hadal Zone",
+    "depth": "6000m+",
+    "desc": "The deepest trenches of the ocean, home to the most extreme life forms.",
+    "img": "assets/images/zone-hadal.png"
+  }
+]
