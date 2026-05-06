@@ -1,8 +1,12 @@
 import { Component, HostListener, OnInit, OnDestroy } from '@angular/core';
+import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
+  imports: [
+    NgIf
+  ],
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit, OnDestroy {
