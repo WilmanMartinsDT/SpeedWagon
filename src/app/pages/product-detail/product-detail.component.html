@@ -33,9 +33,9 @@
         <!-- CANTIDAD -->
         <div class="d-flex align-items-center gap-3 mt-4">
           <div class="qty-control d-flex align-items-center gap-2">
-            <button class="btn-qty">−</button>
-            <span class="qty-value">1</span>
-            <button class="btn-qty">+</button>
+            <button class="btn-qty" (click)="decrementQuantity()">−</button>
+            <span class="qty-value">{{ quantity }}</span>
+            <button class="btn-qty" (click)="incrementQuantity()">+</button>
           </div>
           <button class="btn-add">
             <i class="bi bi-cart-plus me-2"></i>Add to Cart

@@ -12,6 +12,7 @@ import { ProductsService } from '../../services/products.service';
 export class ProductDetailComponent implements OnInit {
 
   product: any = null;
+  quantity: number = 1;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,5 +24,17 @@ export class ProductDetailComponent implements OnInit {
     this.productsService.getProducts().subscribe(data => {
       this.product = data.find(p => p.id === id);
     });
+  }
+
+  incrementQuantity() {
+    if (this.product && this.quantity < this.product.stock) {
+      this.quantity++;
+    }
+  }
+
+  decrementQuantity() {
+    if (this.quantity > 1) {
+      this.quantity--;
+    }
   }
 }
