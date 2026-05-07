@@ -18,6 +18,85 @@
   margin-top: 0;
 }
 
+.ocean-card {
+  width: 100%;
+  min-height: 280px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(10, 20, 35, 0.55);
+  border: 1px solid rgba(0, 217, 255, 0.25);
+  border-radius: 20px;
+
+  backdrop-filter: blur(12px);
+
+  padding: 1.5rem;
+
+  transition: all 0.35s ease;
+
+  box-shadow:
+    0 0 20px rgba(0, 195, 255, 0.08),
+    inset 0 0 20px rgba(255,255,255,0.02);
+}
+
+.ocean-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(0, 217, 255, 0.7);
+
+  box-shadow:
+    0 0 30px rgba(0, 217, 255, 0.25),
+    0 0 60px rgba(0, 217, 255, 0.12);
+}
+
+.ocean-card h5 {
+  color: #00d9ff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ocean-card p {
+  color: rgba(255,255,255,0.72);
+  line-height: 1.6;
+}
+
+.ocean-btn {
+  display: inline-block;
+
+  margin-top: 1rem;
+  padding: 0.55rem 1.2rem;
+
+  border: 1px solid #00d9ff;
+  border-radius: 10px;
+
+  color: #00d9ff;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.ocean-btn:hover {
+  background: #00d9ff;
+  color: #001018;
+
+  box-shadow: 0 0 20px rgba(0,217,255,0.5);
+}
+
+.zones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: auto;
+  align-items: stretch;
+}
+
+.zone-wrapper {
+  display: flex;
+}
+
+
 .hero > div {
   position: relative;
   z-index: 1;

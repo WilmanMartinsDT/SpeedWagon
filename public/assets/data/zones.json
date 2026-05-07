@@ -10,14 +10,14 @@
     "id": 2,
     "name": "Twilight Zone",
     "depth": "200 - 1000m",
-    "desc": "A mysterious middle layer where light barely reaches.",
+    "desc": "A mysterious middle layer where light barely reaches, creating a dim environment.",
     "img": "assets/images/zone-twilight.png"
   },
   {
     "id": 3,
     "name": "Midnight Zone",
     "depth": "1000 - 4000m",
-    "desc": "Complete darkness, extreme pressure and unique creatures.",
+    "desc": "Complete darkness with extreme pressure and unique adapted creatures.",
     "img": "assets/images/zone-midnight.png"
   },
   {
@@ -33,5 +33,12 @@
     "depth": "6000m+",
     "desc": "The deepest trenches of the ocean, home to the most extreme life forms.",
     "img": "assets/images/zone-hadal.png"
+  },
+  {
+    "id": 6,
+    "name": "Unknown Zone",
+    "depth": "Beyond Known Depths",
+    "desc": "We're still working and exploring this zone, discovering new wonders.",
+    "img": "assets/images/zone-unknown.png"
   }
 ]
